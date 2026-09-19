@@ -1,0 +1,38 @@
+{
+  "domain": "Hospital - Medical Diagnosis and Treatment Recommendation",
+  "category": "Relationships Between Entities",
+  "version": "1.0",
+  "relationships": [
+    {"id": "REL1", "name": "Patient EXHIBITS Symptom",       "type": "Many-to-Many", "description": "A patient can show multiple symptoms; a symptom can occur in many patients."},
+    {"id": "REL2", "name": "Symptom INDICATES Disease",      "type": "Many-to-Many", "description": "A symptom may point to several diseases; a disease has several symptoms."},
+    {"id": "REL3", "name": "Disease TREATED_BY Treatment",   "type": "One-to-Many",  "description": "Each disease maps to one or more standard treatments."},
+    {"id": "REL4", "name": "Doctor BELONGS_TO Department",   "type": "Many-to-One",  "description": "Many doctors work under one department."},
+    {"id": "REL5", "name": "Disease HANDLED_BY Department",  "type": "Many-to-One",  "description": "Each disease is primarily managed by a specific department."},
+    {"id": "REL6", "name": "Doctor PRESCRIBES Treatment",    "type": "Many-to-Many", "description": "A doctor can prescribe multiple treatments across patients."}
+  ],
+  "mappings": {
+    "symptom_indicates_disease": {
+      "S001": ["D001", "D002", "D003"],
+      "S002": ["D001"],
+      "S003": ["D004"],
+      "S004": ["D002"],
+      "S005": ["D003"],
+      "S006": ["D005"],
+      "S007": ["D005", "D003"]
+    },
+    "disease_treated_by": {
+      "D001": ["T001"],
+      "D002": ["T002"],
+      "D003": ["T003"],
+      "D004": ["T004"],
+      "D005": ["T005"]
+    },
+    "disease_handled_by_department": {
+      "D001": "DEPT1",
+      "D002": "DEPT2",
+      "D003": "DEPT2",
+      "D004": "DEPT3",
+      "D005": "DEPT4"
+    }
+  }
+}

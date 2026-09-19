@@ -1,0 +1,74 @@
+{
+  "domain": "Hospital - Medical Diagnosis and Treatment Recommendation",
+  "category": "Entity Definitions",
+  "version": "1.0",
+  "entities": [
+    {
+      "name": "Patient",
+      "description": "A person who visits the hospital and shows symptoms.",
+      "attributes": {
+        "PatientID": "Unique identifier",
+        "Name": "Patient's full name",
+        "Age": "Age in years",
+        "Gender": "M / F / Other",
+        "BloodGroup": "Blood group (e.g., B+)",
+        "ContactNumber": "Phone number"
+      }
+    },
+    {
+      "name": "Disease",
+      "description": "A medical condition that can be diagnosed.",
+      "attributes": {
+        "DiseaseID": "Unique identifier",
+        "Name": "Disease name",
+        "Category": "Viral / Bacterial / Parasitic / Neurological / Metabolic",
+        "Severity": "Low / Medium / High / Chronic",
+        "ContagiousStatus": "True / False",
+        "AverageRecoveryDays": "Typical recovery period"
+      }
+    },
+    {
+      "name": "Symptom",
+      "description": "An observable sign that a patient exhibits.",
+      "attributes": {
+        "SymptomID": "Unique identifier",
+        "Name": "Symptom name",
+        "BodyPart": "Affected body part/system",
+        "Severity": "Low / Medium / High",
+        "DurationDays": "Typical duration if untreated"
+      }
+    },
+    {
+      "name": "Doctor",
+      "description": "A medical professional who treats patients.",
+      "attributes": {
+        "DoctorID": "Unique identifier",
+        "Name": "Doctor's name",
+        "Specialization": "Area of expertise",
+        "YearsOfExperience": "Experience in years",
+        "DepartmentID": "Department the doctor belongs to"
+      }
+    },
+    {
+      "name": "Treatment",
+      "description": "A medical procedure or medication used to treat a disease.",
+      "attributes": {
+        "TreatmentID": "Unique identifier",
+        "Name": "Treatment/procedure name",
+        "Type": "Medication / Therapy / Surgery / Lifestyle",
+        "Cost": "Approximate cost (INR)",
+        "DurationDays": "Treatment duration"
+      }
+    },
+    {
+      "name": "Department",
+      "description": "A hospital unit that groups doctors by specialty.",
+      "attributes": {
+        "DepartmentID": "Unique identifier",
+        "Name": "Department name",
+        "Floor": "Physical floor/location",
+        "HeadDoctorID": "Doctor heading the department"
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "domain": "Hospital - Medical Diagnosis and Treatment Recommendation",
+  "category": "Diagnosis Production Rules",
+  "version": "1.0",
+  "inference_method": "Forward chaining",
+  "conflict_resolution": "Most specific rule (largest symptom set) wins; on a tie the earlier rule is chosen.",
+  "rules": [
+    {"id": "R1", "if": ["S001", "S002"], "then": "D001", "strength": "strong", "description": "IF Fever AND Cough THEN Common Cold"},
+    {"id": "R2", "if": ["S001", "S004"], "then": "D002", "strength": "strong", "description": "IF Fever AND Chills THEN Malaria"},
+    {"id": "R3", "if": ["S001", "S005"], "then": "D003", "strength": "strong", "description": "IF Fever AND Abdominal Pain THEN Typhoid"},
+    {"id": "R4", "if": ["S003"],          "then": "D004", "strength": "strong", "description": "IF Headache THEN Migraine"},
+    {"id": "R5", "if": ["S006", "S007"], "then": "D005", "strength": "strong", "description": "IF Excessive Thirst AND Nausea THEN Diabetes Type 2"},
+    {"id": "R6", "if": ["S001"],          "then": "D001", "strength": "weak",   "description": "IF Fever only THEN possible Common Cold (weak match)"}
+  ]
+}

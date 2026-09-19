@@ -1,0 +1,12 @@
+{
+  "domain": "Hospital - Medical Diagnosis and Treatment Recommendation",
+  "category": "Disease Knowledge",
+  "version": "1.0",
+  "diseases": [
+    {"id": "D001", "name": "Common Cold",     "category": "Viral",        "severity": "Low",     "contagious": true,  "avg_recovery_days": 5},
+    {"id": "D002", "name": "Malaria",         "category": "Parasitic",    "severity": "High",    "contagious": false, "avg_recovery_days": 14},
+    {"id": "D003", "name": "Typhoid",         "category": "Bacterial",    "severity": "High",    "contagious": true,  "avg_recovery_days": 21},
+    {"id": "D004", "name": "Migraine",        "category": "Neurological", "severity": "Medium",  "contagious": false, "avg_recovery_days": 2},
+    {"id": "D005", "name": "Diabetes Type 2", "category": "Metabolic",    "severity": "Chronic", "contagious": false, "avg_recovery_days": null}
+  ]
+}

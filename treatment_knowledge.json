@@ -1,0 +1,12 @@
+{
+  "domain": "Hospital - Medical Diagnosis and Treatment Recommendation",
+  "category": "Treatment Knowledge",
+  "version": "1.0",
+  "treatments": [
+    {"id": "T001", "name": "Antipyretics + Rest",     "type": "Medication",           "cost_inr": 300,  "duration_days": 5},
+    {"id": "T002", "name": "Antimalarial Therapy",    "type": "Medication",           "cost_inr": 2500, "duration_days": 14},
+    {"id": "T003", "name": "Antibiotic Course",       "type": "Medication",           "cost_inr": 1800, "duration_days": 21},
+    {"id": "T004", "name": "Pain Management Therapy", "type": "Therapy",              "cost_inr": 700,  "duration_days": 2},
+    {"id": "T005", "name": "Insulin + Diet Control",  "type": "Medication+Lifestyle", "cost_inr": 4000, "duration_days": null}
+  ]
+}

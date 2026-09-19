@@ -1,0 +1,14 @@
+{
+  "domain": "Hospital - Medical Diagnosis and Treatment Recommendation",
+  "category": "Symptom Knowledge",
+  "version": "1.0",
+  "symptoms": [
+    {"id": "S001", "name": "Fever",            "body_part": "Whole Body",   "severity": "Medium", "duration_days": 3},
+    {"id": "S002", "name": "Cough",            "body_part": "Throat/Lungs", "severity": "Low",    "duration_days": 4},
+    {"id": "S003", "name": "Headache",         "body_part": "Head",         "severity": "Medium", "duration_days": 1},
+    {"id": "S004", "name": "Chills",           "body_part": "Whole Body",   "severity": "High",   "duration_days": 2},
+    {"id": "S005", "name": "Abdominal Pain",   "body_part": "Abdomen",      "severity": "Medium", "duration_days": 3},
+    {"id": "S006", "name": "Excessive Thirst", "body_part": "Whole Body",   "severity": "Medium", "duration_days": 30},
+    {"id": "S007", "name": "Nausea",           "body_part": "Stomach",      "severity": "Low",    "duration_days": 2}
+  ]
+}

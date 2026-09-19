@@ -1,0 +1,17 @@
+{
+  "domain": "Hospital - Medical Diagnosis and Treatment Recommendation",
+  "category": "Treatment and Decision Rules",
+  "version": "1.0",
+  "applied_after": "A diagnosis has been reached for a patient",
+  "rules": [
+    {"id": "D1", "condition": "patient is diagnosed with disease d AND d is treated_by treatment t", "conclusion": "recommend treatment t"},
+    {"id": "D2", "condition": "patient is diagnosed with disease d AND d is handled_by department dept", "conclusion": "refer patient to the head doctor of dept"},
+    {"id": "D3", "condition": "recommended treatment t AND patient is allergic to t", "conclusion": "mark t as contraindicated (treatment blocked)"},
+    {"id": "D4", "condition": "diagnosed disease has severity High", "conclusion": "action = ADMIT"},
+    {"id": "D5", "condition": "diagnosed disease has severity Chronic", "conclusion": "action = LONG-TERM FOLLOW-UP"},
+    {"id": "D6", "condition": "diagnosed disease has severity Low", "conclusion": "action = OUTPATIENT"},
+    {"id": "D7", "condition": "diagnosed disease has severity Medium", "conclusion": "action = OUTPATIENT"},
+    {"id": "D8", "condition": "diagnosed disease is contagious", "conclusion": "precaution = ISOLATE patient"},
+    {"id": "D9", "condition": "patient age >= 60", "conclusion": "priority = SENIOR (fast-track)"}
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "domain": "Hospital - Medical Diagnosis and Treatment Recommendation",
+  "category": "Doctor and Department Knowledge",
+  "version": "1.0",
+  "doctors": [
+    {"id": "DR01", "name": "Dr. Neha Kapoor", "specialization": "General Physician",  "experience_years": 8,  "department": "DEPT1"},
+    {"id": "DR02", "name": "Dr. Suresh Rao",  "specialization": "Infectious Disease", "experience_years": 15, "department": "DEPT2"},
+    {"id": "DR03", "name": "Dr. Meera Iyer",  "specialization": "Neurologist",        "experience_years": 10, "department": "DEPT3"},
+    {"id": "DR04", "name": "Dr. Ajay Nair",   "specialization": "Endocrinologist",    "experience_years": 12, "department": "DEPT4"}
+  ],
+  "departments": [
+    {"id": "DEPT1", "name": "General Medicine",    "floor": 1, "head_doctor": "DR01"},
+    {"id": "DEPT2", "name": "Infectious Diseases", "floor": 2, "head_doctor": "DR02"},
+    {"id": "DEPT3", "name": "Neurology",           "floor": 3, "head_doctor": "DR03"},
+    {"id": "DEPT4", "name": "Endocrinology",       "floor": 4, "head_doctor": "DR04"}
+  ]
+}
